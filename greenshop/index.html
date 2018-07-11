@@ -18,9 +18,17 @@
     <script src="../lib/angular-ui-router-1.0.18/angular-ui-router.min.js"></script>
     <script src="../lib/angular-ui-bootstrap-2.5.6/ui-bootstrap-tpls.js"></script>
 
-    <link href="../lib/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet"></link>
+    <link href="../lib/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+
+    <link href="css/site.css" rel="stylesheet"></link>
 </head>
 <body class="container">
-    Green Shop
+    <div id="gsApp" ng-app="gsApp"  ng-controller="MainCtrl" runat="server">
+        <hourglass></hourglass>
+        <ui-view></ui-view>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="app.view.js"></script>
 </body>
 </html>
